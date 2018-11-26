@@ -3,7 +3,7 @@
     $usuario = "vaictor";
     $db = "c9";
 
-    $conexion = mysql_connect($servidor, $usuario);
+    $conexion = mysqli_connect($servidor, $usuario);
         mysql_set_charset('utf8');
     if (!$conexion) {
         die("No pudo conectarse:" . mysql_error());
